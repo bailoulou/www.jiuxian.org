@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/public.css">
+		<link rel="stylesheet" href="./css/detail.css">
+</head>
+<body>
+	<!-- <div class="header container">网站详情页</div> -->
+
+  <!-- <div class="content container">
+    <div class="goodsDetail">
+      <div class="enlargeBox">
+
+      </div>
+      <div class="goodsInfo">
+
+      </div>
+		</div>
+		
+    <div class="goodsDesc">
+
+    </div>
+  </div> -->
+
+  <!-- <div class="footer container">网站底部</div> -->
+
+
+	<div class="box" id="box1">
+    <!-- 图片展示盒子 -->
+    <div class="show">
+      <img src="./imgs/show.jpg" alt="">
+      <div class="mask"></div>
+    </div>
+
+    <!-- 图片选项列表盒子 -->
+    <div class="list">
+      <p class="active">
+        <img src="./imgs/small.jpg" show="./imgs/show.jpg" enlarge="./imgs/big.jpg" alt="">
+      </p>
+      <p>
+        <img src="./imgs/small1.jpg" show="./imgs/show1.jpg" enlarge="./imgs/big1.jpg" alt="">
+      </p>
+    </div>
+
+    <!-- 放大镜盒子 -->
+    <div class="enlarge"></div>
+  </div>
+
+
+
+	<script src="./assets/jquery/jquery.min.js"></script>
+	<script src="./js/detail.js"></script>
+
+	<script src="./enlarge.js"></script>
+	<script>
+    const e1 = new Enlarge('#box1')
+    console.log(e1)
+  </script>
+
+
+</body>
+</html>

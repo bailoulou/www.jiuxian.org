@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+  <div class="jx-wrap">
+
+		<!-- 大脑袋--start -->
+    <div class="jx-top-header">
+      <div class="jx-top-head">
+        <div class="jx-logo">
+          <p style="background:url(./images/left.jpg) no-repeat;" class="jx-index">
+            <a target="_blank" href="http://www.jiuxian.com/"></a>
+          </p>
+          <a class="jx-topic"><img src="./images/slogan.jpg"></a>
+				</div>
+        <div class="jx-head-nav">
+          <div class="jx-head-icon">
+            <span>帮助中心</span>
+            <i class="jx-jt"></i>
+          </div>
+          <div class="jx-head-pop">
+            <ul>
+              <li><a href="http://help.jiuxian.com/view-3-117.htm#delivery_01" target="_blank">配送说明</a></li>
+              <li><a href="http://help.jiuxian.com/view-4-120.htm#pay_1" target="_blank">支付方式</a></li>
+              <li><a href="http://help.jiuxian.com/view-5-123.htm#bz_1" target="_blank">售后服务</a></li>
+              <li><a href="http://member.jiuxian.com/company.htm" target="_blank">企业客户</a></li>
+            </ul>
+          </div>
+				</div>
+        <div class="jx-reg">欢迎来到酒仙网！
+					<a id="regOrLogin" href="/register.htm">免费注册</a>
+				</div>
+      </div>
+		</div>
+		<!-- 大脑袋--end -->
+
+
+		<!-- 表单 -- start -->
+		<form id="login" method="post" action="">
+			<!--内容-->
+												
+			<div class="jx-main-bg" style="background:url(./images/login-banner.jpg) no-repeat center top;">
+				<div class="jx-main">
+					<div class="jx-content loginbd clearfix">
+						<a class="picFoucs" href="http://shop.jiuxian.com/brand-402/activity-4821.htm?isPreview=1" target="_blank"></a>
+						<!-- 填内容 输入框 -->
+						<div class="jx-contentbd">
+							<a class="jx-ewmLoginLink"><i></i></a>
+							<a class="jx-pcLoginLink"><i></i></a>
+
+							<div class="loginCon">
+								<div class="loginTit clearfix">
+										<a href="javascript:;" class="userLogin on">帐号登录</a>
+										<span>|</span>
+										<a href="javascript:;" class="mobileLogin">手机动态密码登录</a>	                        
+								</div>
+								<!-- 填内容 -->
+								<div class="loginType loginUsual">
+									<!-- 用户名 -->
+									<div class="Frame enterFrame">
+										<div class="filter">
+											<em class="userIconBox">
+												<i class="userIcon"></i>
+											</em>
+											<!-- <p style="">用户名/邮箱/手机号</p> -->
+											<i class="judge"></i>
+											<i class="judgeDel"></i>
+										</div>
+										<input id="username" class="text" type="text" name="username" autocomplete="off" value="" placeholder="用户名/邮箱/手机号">
+										<div class="mistakeTip login_error hide" style="display:none">请输入用户名/邮箱/手机号</div>
+										<div class="mistakeTip02" style="display:none">请输入用户名/邮箱/手机号</div>
+									</div>
+									<!-- 密码 -->
+									<div class="Frame enterFrame">
+											<div class="filter">
+												<em class="userIconBox"><i class="pwdIcon"></i></em>
+												<!-- <p style="">密码</p> -->
+												<i class="judge"></i>
+												<i class="judgeDel"></i>
+											</div>
+											<input maxlength="20" id="password" class="text" type="password" autocomplete="off" name="password" onpaste="return false" placeholder="密码">
+											<input type="hidden" id="pwd" name="pwd">
+											<div class="mistakeTip login_error hide" style="display:none">请输入密码</div>
+											<div class="mistakeTip02" style="display:none">请输入密码</div>
+									</div>
+									<!-- 验证码 -->
+									<div class="Frame yzFrame" id="validcaptcha">
+											<div class="filter">
+												<em class="userIconBox"><i class="yzIcon"></i></em>
+												<!-- <p>验证码</p> -->
+												<img class="yzm" id="captchaImage" src="" alt="" width="80" height="40">
+											</div>
+											<input id="verification" class="text" type="text" name="j_captcha" size="8" maxlength="5" autocomplete="off" placeholder="验证码">
+											<a class="refresh" id="_captchaImage" href="javascript:void(0)"><i></i></a>
+											<div class="mistakeTip" style="display:none">请输入验证码</div>
+									</div>
+
+									<div class="loginBtn">
+											<input name="bi_Usuallogin" type="button" id="save" value="登&nbsp;&nbsp;录">
+									</div>
+									<div class="moreChoice clearfix">
+										<div class="auto">
+											<input type="checkbox" class="check" id="auto" name="remember" value="yes">
+											<label for="auto">自动登录</label>
+										</div>
+										<a class="freeReg" href="/register.htm">免费注册</a>
+										<a class="forgetPwd" id="foget" href="/recoverPwd.htm">忘记密码</a>		
+									</div>
+								</div>
+
+								<!-- <div class="loginType loginMobile" style="display:none">
+									<div class="Frame enterFrame enterFramePhone">
+										<div class="filter">
+											<em class="userIconBox"><i class="userIcon"></i></em>
+											<p>手机号</p>
+											<i class="judge"></i>
+										</div>
+										<input id="iphone" class="text" type="text" name="phone" autocomplete="off" value="">
+										<div class="mistakeTip" style="display:none">请输入手机号</div>
+										<div class="mistakeTip02  login_error hide">请输入正确的手机号</div>
+									</div>
+									<div class="Frame yzFrame" id="validcaptchaTwe">
+										<div class="filter">
+											<em class="userIconBox"><i class="yzIcon"></i></em>
+											<p>验证码</p>
+											<img class="yzm" id="captchaImageTwe" src="" alt="" width="80" height="40">
+										</div>
+										<input id="verificationTwe" class="text" type="text" name="j_captcha" size="8" maxlength="5" autocomplete="off">
+										<a class="refresh" id="_captchaImageTwe" href="javascript:void(0)"><i></i></a>
+										<div class="mistakeTip" style="display:none">请输入验证码</div>
+									</div>
+
+									<div class="regAccInforBom clearfix">
+										<div class="regInputBox" style="width:270px;">
+											<div class="mistakeTip" style="display:none;right:119px;">请输入验证码</div>
+											<div class="checkButBox loginRegbd">
+												<span class="regCheckBut logregCheckBtn" id="idenCodePhone">获取短信验证码</span>
+												<span id="idenCodePhoneNum" class="regCheckBut logregCheckBtn" style="display:none;"><em>59</em>秒后重新获取</span>
+											</div>
+											<div class="regCheck">
+												<input class="regInputLogin text" id="phoneverification" type="text" name="mobileCheck" autocomplete="off" maxlength="6">
+												<em class="userIconBox">
+													<i class="regIcon accCheck"></i>
+												</em>
+												<span class="regValue">校验码</span>
+												<i class="regPointIcon regFalse" style="display:none;right:120px;"></i>
+												<span class="regPoint poiFalse" style="display:none;">请输入校验码</span>
+											</div>
+										</div>
+									</div>
+
+									<div class="loginBtn">
+										<input name="bi_phoneDylogin" id="saveLogin" type="button" value="登&nbsp;&nbsp;录" onclick="ga('send','event','getMsgCode','button','msgLogin')">
+									</div>
+								</div> -->
+								<div class="cooperate">
+									<p>使用合作账号登录</p>
+									<div class="cooperateWay clearfix">
+										<a class="qq" href="/union/qq.htm?from=http://www.jiuxian.com/"><i></i></a>
+										<a class="sina" href="/union/sina_login.htm?from=http://www.jiuxian.com/"><i></i></a>
+										<a class="aliPay" href="/union/alipay_login.htm?from=http://www.jiuxian.com/" name="fastlogin"><i></i></a>
+										<a class="baidu" href="/union/baidu_login.htm?from=http://www.jiuxian.com/"><i></i></a>
+									</div>
+								</div>
+							</div> 
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" value="http://www.jiuxian.com/web.php" name="back_act">
+			<input type="hidden" id="fail_num" value="0">
+			<input type="hidden" id="fromUrl" name="from" value="http://www.jiuxian.com/"> 
+			<input type="hidden" id="exponent" value="">
+			<input type="hidden" id="modulus" value="">
+		</form>
+		<!-- 表单 --end -->
+
+
+		<!-- 屁股--start -->
+		<div class="jx-footer" style="height: 90px;">
+			<div class="jx-foot">
+				<p>© &nbsp;酒仙网&nbsp; 2011 jiuxian.com All &nbsp;Rights Reserved&nbsp;&nbsp;
+					<a target="_blank" href="#">京ICP证110141号</a>&nbsp;&nbsp;京公网安备1101050188221
+				</p>
+				<p class="red">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+			</div>
+			<div class="copybot">
+				<a class="a1" target="_blank" href="https://ss.cnnic.cn/verifyseal.dll?sn=2011040600100007749&amp;ct=df&amp;pa=894226"></a>
+				<a class="a2" target="_blank" href="http://pinggu.zx110.org/checkWebsite.do?lt=1&amp;wd=www.jiuxian.com"></a>
+				<a class="a3" target="_blank" href="http://img01.jiuxian.com/img1/nsy/icp01.jpg"></a>
+				<a class="a4" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1554833311"></a>
+				<a class="a5" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1554833311"></a>
+			</div>
+		 </div>
+		<!-- 屁股--end -->
+
+  </div>
+
+	<script src="./assets/jquery/jquery.min.js"></script>
+	<script src="./assets/jquery-validation/jquery.validate.min.js"></script>
+	<script src="./js/public.js"></script>
+	<script src="./js/login.js"></script>
+
+</body>
+</html>

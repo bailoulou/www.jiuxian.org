@@ -1,0 +1,656 @@
+body {
+  font-size: 12px;
+  color: #666;
+  background: #f7f7f7;
+}
+
+.jx-wrap {
+  width: 100%;
+  background: #fafafa;
+  min-width: 1000px;
+}
+
+.jx-top-header {
+	width: 100%;
+	height: 88px;
+	background: #fff;
+	position: relative;
+	box-shadow: 1px 2px 6px #e1e1e1;
+	z-index: 1;
+}
+
+.jx-top-head {
+	width: 1000px;
+	height: 88px;
+	margin: 0 auto;
+}
+
+.jx-logo {
+	width: 257px;
+	height: 63px;
+	float: left;
+	margin-top: 15px;
+}
+
+.jx-logo p {
+	float: left;
+}
+
+.jx-logo .jx-index {
+	width: 140px;
+}
+
+.jx-logo p a {
+	display: block;
+	height: 63px;
+}
+
+.jx-logo .jx-index a {
+	width: 140px;
+}
+
+.jx-logo .jx-topic {
+	width: 117px;
+	float: left;
+}
+
+.jx-head-nav {
+	width: 77px;
+	height: 14px;
+	line-height: 14px;
+	float: right;
+	display: inline;
+	position: relative;
+	margin: 48px 0 0 20px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.jx-head-icon {
+	height: 14px;
+	position: relative;
+	z-index: 2;
+}
+
+.jx-head-nav span {
+	float: left;
+	display: inline-block;
+	color: #666;
+	margin-right: 6px;
+}
+
+.jx-wrap i {
+	background: url(../images/login-xuebitu.png) no-repeat 0 0;
+}
+
+.jx-head-nav .jx-jt {
+	float: left;
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background-position: -23px 0;
+}
+
+.jx-head-pop {
+	position: absolute;
+	top: -6px;
+	left: -10px;
+	width: 85px;
+	padding-top: 26px;
+	border: 1px solid #ccc;
+	z-index: 1;
+	display: none;
+}
+
+.jx-head-pop li {
+	border-top: 1px dotted #ccc;
+	padding-left: 10px;
+	height: 24px;
+	line-height: 24px;
+	background: #fff;
+}
+
+.jx-head-pop li a {
+	color: #999;
+}
+
+.jx-head-pop li a:hover {
+	text-decoration: underline;
+}
+
+.jx-reg {
+	height: 14px;
+	line-height: 14px;
+	color: #999;
+	float: right;
+	margin-top: 48px;
+}
+
+.jx-reg a, .jx-reg a:hover {
+	color: #0066cc;
+	margin-left: 20px;
+}
+
+
+/* 表单 */
+
+.jx-main-bg {
+	width: 100%;
+	padding: 0 0 50px;
+	height: 600px;
+}
+
+.jx-main {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.jx-content {
+	height: 500px;
+	background: #fff;
+	border: 3px solid #eaeaea;
+	border-radius: 5px;
+	box-shadow: 1px 6px 11px #e4e4e4;
+	position: relative;
+}
+
+.jx-content.loginbd {
+	background: transparent;
+	border: 0;
+	box-shadow: 0 0 0 0;
+}
+
+.jx-contentbd {
+	width: 350px;
+	height: 405px;
+	position: relative;
+	top: 100px;
+	left: 650px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.jx-ewmLoginLink {
+	width: 65px;
+	height: 65px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+}
+
+.jx-ewmLoginLink i {
+	width: 65px;
+	height: 65px;
+	display: block;
+	background-position: 0 -230px;
+}
+
+.loginCon {
+	width: 270px;
+	margin-left: 40px;
+}
+
+.loginCon .loginTit {
+	height: 40px;
+	line-height: 40px;
+	margin: 14px 0 19px;
+	border-bottom: 1px solid #e9e9e9;
+	overflow: hidden;
+}
+
+.loginTit a {
+	float: left;
+	display: inline-block;
+	color: #999;
+	font-size: 16px;
+}
+
+.loginTit a:hover {
+	text-decoration: underline;
+}
+
+.loginTit a.mobileLogin:hover {
+	color: #0066cc;
+}
+
+.loginTit a.on {
+	color: #e4393c;
+	font-weight: bold;
+}
+
+.loginTit span {
+	float: left;
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+	padding: 0 18px;
+}
+
+.loginType {
+	height: 267px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.Frame {
+	width: 270px;
+	height: 42px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+}
+
+.Frame .filter {
+	width: 43px;
+	height: 42px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+.Frame .filter .userIconBox {
+	display: inline-block;
+	width: 43px;
+	height: 40px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	background: #f3f3f3;
+	border-right: 1px solid #dcdcdc;
+	z-index: 3;
+}
+
+.Frame .filter i {
+	float: left;
+	display: inline-block;
+}
+
+.Frame .filter .userIcon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: -51px 0;
+	margin: 10px 10px 0 11px;
+}
+
+.Frame .filter p {
+	display: inline-block;
+	width: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 16px;
+	margin-top: 11px;
+	color: #ccc;
+	padding-left: 55px;
+	z-index: 5;
+}
+
+.Frame .filter .judge {
+	float: none;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 246px;
+}
+
+.Frame .filter .judgeDel {
+	float: left;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-position: -486px -42px;
+	position: absolute;
+	top: 14px;
+	left: 248px;
+	z-index: 5;
+	cursor: pointer;
+	display: none;
+}
+
+input, select {
+	vertical-align: middle;
+}
+
+.jx-wrap input {
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	border: 1px solid #dcdcdc;
+	font-size: 16px;
+}
+
+label.error {
+	background: #ed787f;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	color: #fff;
+	padding: 0 10px;
+	z-index: 5;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.Frame .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	background: none;
+	/* font-weight: 700; */
+}
+
+.enterFrame .text {
+	width: 173px;
+	padding: 0 45px 0 50px;
+}
+
+.mistakeTip .mistakeTip02 {
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	right: 0;
+	bottom: -15px;
+	color: #fff;
+	padding: 0 10px;
+	z-index: 5;
+}
+
+.mistakeTip {
+	background: #ed787f;
+	color: #fff;
+}
+
+.mistakeTip02 {
+	background: #ccc;
+}
+
+.Frame .filter .pwdIcon {
+	display: inline-block;
+	width: 16px;
+	height: 22px;
+	background-position: -83px 0;
+	margin: 10px 11px auto 13px;
+}
+
+.Frame .filter .yzIcon {
+	width: 18px;
+	height: 24px;
+	background-position: -426px 0;
+	margin: 10px 11px auto 13px;
+}
+
+.yzFrame .yzm {
+	position: absolute;
+	top: 1px;
+	left: 189px;
+}
+
+.yzFrame .text {
+	width: 84px;
+	padding-left: 50px;
+	padding-right: 134px;
+}
+
+.yzFrame .refresh i {
+	width: 80px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-position: 188px 188px;
+	z-index: 5;
+}
+
+.loginCon .loginBtn {
+	margin-bottom: 11px;
+}
+
+.loginBtn input {
+	width: 270px;
+	background: #e10303;
+	color: #fff;
+	border-radius: 2px;
+	border: 0;
+	cursor: pointer;
+}
+
+.loginCon .moreChoice {
+	margin-bottom: 16px;
+}
+
+.moreChoice .auto {
+	float: left;
+}
+
+.moreChoice .auto, .moreChoice .forgetPwd {
+	color: #999;
+	display: inline-block;
+}
+
+.moreChoice .auto input {
+	height: auto;
+	border: 0;
+}
+
+.moreChoice .freeReg {
+	float: right;
+	padding-left: 13px;
+	color: #0066cc;
+	display: inline-block;
+}
+
+.moreChoice .forgetPwd {
+	float: right;
+}
+
+.moreChoice a:hover {
+	text-decoration: underline;
+}
+
+.regAccInforBom {
+	margin: 0 0 20px;
+}
+
+.regInputBox {
+	height: 42px;
+	width: 302px;
+	float: left;
+	position: relative;
+}
+
+.checkButBox {
+	width: 148px;
+	height: 42px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.checkButBox.loginRegbd {
+	width: 116px;
+}
+
+.checkButBox .regCheckBut {
+	display: inline-block;
+	width: 146px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	border: 1px solid #ccc;
+	background: #eaeaea;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.checkButBox .regCheckBut.logregCheckBtn {
+	width: 114px;
+}
+
+.checkButBox .regCheckBut em {
+	font-style: normal;
+	padding: 0 5px;
+	display: inline-block;
+	color: #cc0000;
+}
+
+.regInputBox .regInputLogin {
+	width: 95px;
+	padding-left: 54px;
+}
+
+.regInputBox .userIconBox {
+	display: inline-block;
+	width: 43px;
+	height: 40px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	z-index: 3;
+	background: #f3f3f3;
+	border-right: 1px solid #dcdcdc;
+}
+
+.regInputBox .regIcon.accCheck {
+	background-position: -259px 1px;
+}
+
+.regInputBox .regIcon {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 9px;
+	left: 12px;
+}
+
+.regInputBox .regValue {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	font-size: 16px;
+	color: #ccc;
+	position: absolute;
+	top: 9px;
+	left: 45px;
+	z-index: 2;
+	display: none;
+}
+
+.regInputBox .regPointIcon.regFalse {
+	background-position: -162px 0;
+}
+
+.regInputBox .regPointIcon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 14px;
+	right: 10px;
+	z-index: 4;
+}
+
+.regInputBox .regPoint.poiFalse {
+	background: #ed787f;
+}
+
+.regInputBox .regPoint {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	position: absolute;
+	top: 37px;
+	right: 0;
+	z-index: 5;
+	padding: 0 8px;
+}
+
+.cooperate {
+	width: 320px;
+}
+
+.cooperate p {
+	margin: 22px 15px 0 0;
+	float: left;
+	color: #999;
+}
+
+.cooperateWay {
+	width: 243px;
+	height: 42px;
+	margin: 0 auto;
+}
+
+.cooperateWay a i {
+	float: left;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-left: 12px;
+	margin-top: 16px;
+}
+
+.cooperateWay .qq i {
+	background-position: 0 -35px;
+	margin-left: 0;
+}
+
+.cooperateWay .sina i {
+	background-position: -51px -35px;
+}
+
+.cooperateWay .aliPay i {
+	background-position: -102px -35px;
+}
+
+.cooperateWay .baidu i {
+	background-position: -153px -35px;
+}
+
+
+/* 尾部 */
+
+.jx-footer {
+	width: 100%;
+	padding: 10px 0 0 ;
+}
+
+.jx-foot {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.jx-foot p {
+	line-height: 30px;
+	color: #333;
+}
+
+.jx-foot p a {
+	color: #666;
+}
+
+.jx-foot p a:hover {
+	color: #cc0001;
+	text-decoration: underline;
+}
+
+.jx-foot .red {
+	color: #ff0000;
+}
+
